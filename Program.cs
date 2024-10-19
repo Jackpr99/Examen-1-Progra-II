@@ -16,7 +16,7 @@ namespace Examen_I_Progra_II
         {
             private List<Empleado> empleados = new List<Empleado>();
 
-            // Método para mostrar el menú
+        
             public void MostrarMenu()
             {
                 int opcion;
@@ -63,7 +63,7 @@ namespace Examen_I_Progra_II
                 } while (opcion != 7);
             }
 
-            // Método para agregar un empleado
+            
             private void AgregarEmpleado()
             {
                 Console.Write("Ingrese la cédula del empleado: ");
@@ -82,7 +82,7 @@ namespace Examen_I_Progra_II
                 Console.WriteLine("Empleado agregado exitosamente.");
             }
 
-            // Método para consultar empleados
+            
             private void ConsultarEmpleados()
             {
                 Console.WriteLine("\nLista de Empleados:");
@@ -92,7 +92,7 @@ namespace Examen_I_Progra_II
                 }
             }
 
-            // Método para modificar un empleado
+           
             private void ModificarEmpleado()
             {
                 Console.Write("Ingrese la cédula del empleado a modificar: ");
@@ -137,7 +137,7 @@ namespace Examen_I_Progra_II
                 }
             }
 
-            // Método para borrar un empleado
+            
             private void BorrarEmpleado()
             {
                 Console.Write("Ingrese la cédula del empleado a borrar: ");
@@ -155,14 +155,14 @@ namespace Examen_I_Progra_II
                 }
             }
 
-            // Método para inicializar arreglos
+            
             private void InicializarArreglos()
             {
                 empleados = new List<Empleado>();
                 Console.WriteLine("Arreglos inicializados.");
             }
 
-            // Método para mostrar el submenú de reportes
+            
             private void MostrarSubmenuReportes()
             {
                 int opcion;
@@ -193,7 +193,7 @@ namespace Examen_I_Progra_II
                 } while (opcion != 3);
             }
 
-            // Método para listar empleados ordenados por nombre
+            
             private void ListarEmpleadosOrdenadosPorNombre()
             {
                 var empleadosOrdenados = empleados.OrderBy(e => e.Nombre).ToList();
@@ -204,7 +204,7 @@ namespace Examen_I_Progra_II
                 }
             }
 
-            // Método para calcular y mostrar el promedio de los salarios
+          
             private void CalcularPromedioSalarios()
             {
                 if (empleados.Count > 0)
